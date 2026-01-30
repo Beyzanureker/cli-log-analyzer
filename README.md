@@ -43,19 +43,20 @@ Analiz edilen olayların CSV formatında raporlanması:
 
 ## 📁 Proje Yapısı
 
+```text
 CLI-LOG-ANALYZER/
 ├── logs/
-│ ├── auth.log
-│ ├── syslog
-│ └── nginx_access.log
+│   ├── auth.log
+│   ├── syslog
+│   └── nginx_access.log
 │
 ├── output/
-│ └── report_*.csv
+│   └── report.csv
 │
 ├── screenshots/
-│ ├── menu.png
-│ ├── analiz.png
-│ └── rapor.png
+│   ├── menu.png
+│   ├── analiz.png
+│   └── rapor.png
 │
 ├── app.py
 ├── Dockerfile
