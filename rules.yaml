@@ -1,0 +1,36 @@
+rules:
+  - name: "Basarisiz Giris Denemesi"
+    keywords:
+      - "Failed password"
+      - "authentication failure"
+    severity: "YUKSEK"
+    log_type: "auth"
+    
+  - name: "SSH Baglantisi"
+    keywords:
+      - "Accepted password"
+      - "session opened"
+    severity: "DUSUK"
+    log_type: "auth"
+    
+  - name: "Sistem Hatasi"
+    keywords:
+      - "error"
+      - "ERROR"
+      - "critical"
+    severity: "ORTA"
+    log_type: "system"
+    
+  - name: "Nginx 404 Hatasi"
+    keywords:
+      - "404"
+      - "not found"
+    severity: "ORTA"
+    log_type: "nginx"
+    
+  - name: "Nginx 500 Hatasi"
+    keywords:
+      - "500"
+      - "Internal Server Error"
+    severity: "YUKSEK"
+    log_type: "nginx"
