@@ -1,0 +1,5 @@
+Jan 28 10:20:15 server kernel: [12345.678901] error: disk write failed
+Jan 28 10:21:00 server systemd[1]: Started Daily Cleanup Service.
+Jan 28 10:22:30 server kernel: [12567.890123] critical: memory allocation failed
+Jan 28 10:23:45 server cron[5678]: (root) CMD (run-parts /etc/cron.daily)
+Jan 28 10:24:00 server kernel: [12678.901234] ERROR: unable to mount filesystem

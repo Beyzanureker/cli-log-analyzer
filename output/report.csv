@@ -1,0 +1,23 @@
+﻿zaman;dosya;satir_no;seviye;kural_adi;mesaj
+2026-01-30 18:15:00;auth.log;1;YUKSEK;Basarisiz Giris Denemesi;Jan 28 10:15:23 server sshd[1234]: Failed password for invalid user admin from 192.168.1.50 port 22 ssh2
+2026-01-30 18:15:00;auth.log;2;DUSUK;SSH Baglantisi;Jan 28 10:15:45 server sshd[1235]: Accepted password for user ahmet from 192.168.1.100 port 22 ssh2
+2026-01-30 18:15:00;auth.log;3;YUKSEK;Basarisiz Giris Denemesi;Jan 28 10:16:12 server sshd[1236]: Failed password for root from 192.168.1.75 port 22 ssh2
+2026-01-30 18:15:00;auth.log;4;DUSUK;SSH Baglantisi;Jan 28 10:17:00 server sshd[1237]: session opened for user mehmet by (uid=0)
+2026-01-30 18:15:00;auth.log;5;YUKSEK;Basarisiz Giris Denemesi;Jan 28 10:18:30 server sshd[1238]: Failed password for invalid user test from 192.168.1.50 port 22 ssh2
+2026-01-30 18:15:00;syslog;1;ORTA;Sistem Hatasi;Jan 28 10:20:15 server kernel: [12345.678901] error: disk write failed
+2026-01-30 18:15:00;syslog;3;ORTA;Sistem Hatasi;Jan 28 10:22:30 server kernel: [12567.890123] critical: memory allocation failed
+2026-01-30 18:15:00;syslog;5;ORTA;Sistem Hatasi;Jan 28 10:24:00 server kernel: [12678.901234] ERROR: unable to mount filesystem
+2026-01-30 18:15:00;nginx_access.log;2;ORTA;Nginx 404 Hatasi;"192.168.1.101 - - [28/Jan/2026:10:26:15 +0300] ""GET /about.html HTTP/1.1"" 404 567"
+2026-01-30 18:15:00;nginx_access.log;3;YUKSEK;Nginx 500 Hatasi;"192.168.1.102 - - [28/Jan/2026:10:27:00 +0300] ""POST /api/login HTTP/1.1"" 500 890"
+2026-01-30 18:15:00;nginx_access.log;5;ORTA;Nginx 404 Hatasi;"192.168.1.104 - - [28/Jan/2026:10:29:45 +0300] ""GET /admin HTTP/1.1"" 404 234"
+2026-01-30 18:15:50;auth.log;1;YUKSEK;Basarisiz Giris Denemesi;Jan 28 10:15:23 server sshd[1234]: Failed password for invalid user admin from 192.168.1.50 port 22 ssh2
+2026-01-30 18:15:50;auth.log;2;DUSUK;SSH Baglantisi;Jan 28 10:15:45 server sshd[1235]: Accepted password for user ahmet from 192.168.1.100 port 22 ssh2
+2026-01-30 18:15:50;auth.log;3;YUKSEK;Basarisiz Giris Denemesi;Jan 28 10:16:12 server sshd[1236]: Failed password for root from 192.168.1.75 port 22 ssh2
+2026-01-30 18:15:50;auth.log;4;DUSUK;SSH Baglantisi;Jan 28 10:17:00 server sshd[1237]: session opened for user mehmet by (uid=0)
+2026-01-30 18:15:50;auth.log;5;YUKSEK;Basarisiz Giris Denemesi;Jan 28 10:18:30 server sshd[1238]: Failed password for invalid user test from 192.168.1.50 port 22 ssh2
+2026-01-30 18:15:50;syslog;1;ORTA;Sistem Hatasi;Jan 28 10:20:15 server kernel: [12345.678901] error: disk write failed
+2026-01-30 18:15:50;syslog;3;ORTA;Sistem Hatasi;Jan 28 10:22:30 server kernel: [12567.890123] critical: memory allocation failed
+2026-01-30 18:15:50;syslog;5;ORTA;Sistem Hatasi;Jan 28 10:24:00 server kernel: [12678.901234] ERROR: unable to mount filesystem
+2026-01-30 18:15:50;nginx_access.log;2;ORTA;Nginx 404 Hatasi;"192.168.1.101 - - [28/Jan/2026:10:26:15 +0300] ""GET /about.html HTTP/1.1"" 404 567"
+2026-01-30 18:15:50;nginx_access.log;3;YUKSEK;Nginx 500 Hatasi;"192.168.1.102 - - [28/Jan/2026:10:27:00 +0300] ""POST /api/login HTTP/1.1"" 500 890"
+2026-01-30 18:15:50;nginx_access.log;5;ORTA;Nginx 404 Hatasi;"192.168.1.104 - - [28/Jan/2026:10:29:45 +0300] ""GET /admin HTTP/1.1"" 404 234"
