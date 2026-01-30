@@ -34,7 +34,7 @@ class LogAnalyzer:
                     for kelime in kural['keywords']:
                         if kelime in satir:
                             toplam_eslesme += 1
-                            # Mesajı kısalt (ilk 150 karakter)
+                    
                             mesaj_kisa = satir.strip()[:150] + '...' if len(satir.strip()) > 150 else satir.strip()
                             
                             self.bulunan_olaylar.append({
@@ -61,9 +61,8 @@ class LogAnalyzer:
         print(f"⏱️  {sure} saniye boyunca izlenecek...\n")
         
         try:
-            # Dosyanın sonuna git
             with open(dosya_yolu, 'r') as f:
-                f.seek(0, 2)  # Dosya sonuna git
+                f.seek(0, 2)  
                 
                 baslangic = time.time()
                 
@@ -71,7 +70,6 @@ class LogAnalyzer:
                     satir = f.readline()
                     
                     if satir:
-                        # Yeni satır geldi, kontrol et
                         for kural in self.kurallar:
                             for kelime in kural['keywords']:
                                 if kelime in satir:
@@ -79,7 +77,7 @@ class LogAnalyzer:
                                     print(f"   {satir.strip()}\n")
                                     break
                     else:
-                        time.sleep(0.5)  # Yarım saniye bekle
+                        time.sleep(0.5) 
                 
                 print("✅ İzleme tamamlandı\n")
                 
@@ -146,13 +144,11 @@ def main():
         secim = input("Seçiminiz (1-6): ").strip()
         
         if secim == '1':
-            # Tüm dosyaları analiz et
             for dosya in log_dosyalari:
                 analizci.dosya_analiz_et(dosya)
             input("Devam etmek için Enter'a basın...")
             
         elif secim == '2':
-            # Belirli dosya analizi
             print("\nMevcut dosyalar:")
             for i, dosya in enumerate(log_dosyalari, 1):
                 print(f"{i}. {dosya}")
@@ -170,13 +166,12 @@ def main():
             input("Devam etmek için Enter'a basın...")
             
         elif secim == '3':
-            # Gerçek zamanlı izleme
             print("\nMevcut dosyalar:")
             for i, dosya in enumerate(log_dosyalari, 1):
                 print(f"{i}. {dosya}")
             
             dosya_secim = input("Dosya numarası: ").strip()
-            sure = input("Kaç saniye izlensin? (varsayılan 10): ").strip()
+            sure = input("Kaç saniye izlensin?: ").strip()
             
             try:
                 index = int(dosya_secim) - 1
@@ -192,17 +187,14 @@ def main():
             input("Devam etmek için Enter'a basın...")
             
         elif secim == '4':
-            # Rapor oluştur
             analizci.rapor_olustur()
             input("Devam etmek için Enter'a basın...")
             
         elif secim == '5':
-            # Temizle
             analizci.temizle()
             input("Devam etmek için Enter'a basın...")
             
         elif secim == '6':
-            # Çıkış
             print("\n👋 Görüşmek üzere!\n")
             break
             
