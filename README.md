@@ -30,6 +30,12 @@ Analiz edilen olayların CSV formatında raporlanması:
 
 ---
 
+### Çıktı Dosyası
+![Output](screenshots/output.png)
+
+---
+
+
 ## 📌 Özellikler
 
 - Dosya bazlı log analizi (auth.log, syslog, nginx_access.log)
@@ -42,8 +48,7 @@ Analiz edilen olayların CSV formatında raporlanması:
 ---
 
 ## 📁 Proje Yapısı
-
-```text
+---
 CLI-LOG-ANALYZER/
 ├── logs/
 │   ├── auth.log
@@ -63,8 +68,6 @@ CLI-LOG-ANALYZER/
 ├── rules.yaml
 └── README.md
 
-
----
 
 ##  Kurulum ve Çalıştırma
 
